@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#gamespace {
+  border: 1px solid blue;
+}
+
+#text_box {
+  position: absolute;
+}
+
+#typewriter_outer,
+#typewriter_inner,
+#next_arrow {
+  display: block;
+}
+
+#typewriter_outer {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#typewriter_inner {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  line-height: 30px;
+  color: white;
+}
+
+#next_arrow {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+#blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+#message_box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: cyan solid thin;
+  display: none;
+}
+
+#note {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#HUD {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 400;
+  width: 1024px;
+  height: 50px;
+  position: absolute;
+}
+
+#HUD p {
+  float: right;
+  height: 45px;
+  margin: 0px;
+  padding-top: 5px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#HUD span {
+  font-size: 12px;
+}
+
+#money {
+  background: #86C77F;
+  border-bottom: medium solid #6AA364;
+  -webkit-transition-property: width;
+  /* Safari */
+  -webkit-transition-duration: 1s;
+  /* Safari */
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+#week {
+  width: 50px;
+  background: #616161;
+  border-bottom: medium solid #3B3B3B;
+}
+
+#ratings {
+  width: 50px;
+  background: #7DB7F5;
+  border-bottom: medium solid #4075AD;
+}
+
+#confirmation_box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  vertical-align: middle;
+}
+
+#confirmation_container {
+  width: 600px;
+  height: 400px;
+  display: table-cell;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url('assets/LastWeek-_0002s_0024_-Prompt.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#confirm_message {
+  width: 600px;
+  height: 250px;
+}
+
+#button_container {
+  padding-top: 0px;
+}
+
+.bg-preloader-div {
+  background: url('assets/LastWeek-_0002s_0014_YesButtonUp.png') no-repeat;
+  background: url('assets/LastWeek-_0002s_0015_YesButtonDown.png') no-repeat;
+  background: url('assets/LastWeek-_0002s_0020_NoButtonUp.png') no-repeat;
+  background: url('assets/LastWeek-_0002s_0019_NoButtonDown.png') no-repeat;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+#confirm {
+  width: 175px;
+  height: 40px;
+  padding: 15px;
+  align: center;
+  display: table-cell;
+  vertical-alilgn: middle;
+  text-align: center;
+  background: url('assets/LastWeek-_0002s_0014_YesButtonUp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#confirm:hover {
+  background: url('assets/LastWeek-_0002s_0015_YesButtonDown.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#close {
+  width: 175px;
+  height: 40px;
+  padding: 15px;
+  align: center;
+  display: table-cell;
+  vertical-alilgn: middle;
+  text-align: center;
+  background: url('assets/LastWeek-_0002s_0020_NoButtonUp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#close:hover {
+  background: url('assets/LastWeek-_0002s_0019_NoButtonDown.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#divider {
+  width: 20px;
+  height: 40px;
+  display: table-cell;
+}
